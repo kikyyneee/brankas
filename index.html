@@ -1,0 +1,2031 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&family=Roboto+Condensed&family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+
+    <title>Brankasbro</title>
+
+<style>
+
+@media only screen and (max-width: 600px) {
+
+    .card-mobile{
+      height: 600px;
+      position: relative;
+      width: 100%;
+      text-align: justify;
+      border: 1px solid #e8aa50;
+      margin-top:20px;
+    }
+
+    .side-menu {
+        display: none;
+    }
+
+    .dropdown-menu {
+      background-image: linear-gradient(315deg, #e8aa50 0%, #d89940 134%);
+    }
+
+    .dropdown-item {
+      color: white;
+    }
+
+    .dropdown-benoit{
+      display: none;
+      }
+
+      .flex-dropdown{
+        display: none;
+      }
+
+      .text-dropdown{
+        display: none;
+      }
+
+      .text-dropdown:hover{
+        display: none;
+      }
+
+      .nav-link {
+        margin-left: 18px;
+        font-family: 'Roboto Condensed', sans-serif;
+        /* font-family: 'League Spartan', sans-serif; */
+        font-size: 18px;
+    }
+
+/* first page */
+.display-image{
+            width: 100%;
+            height: 100vh;
+            background-image: url('bg-top.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* .overlay{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: linear-gradient(315deg, #d89940 0%, #311102 134%) !important; comment this
+            height: 100%;
+            width: 100%;
+            opacity: 0.3; and this
+        } */
+
+        .block-greeting{
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            background:black;
+            opacity: 0.8;
+            position: relative;
+        }
+
+        .box-top{
+          display: none;
+        }
+
+        .box-bottom{
+          display: none;
+        }
+
+        .greeting-text{
+            position: absolute;
+            z-index: 4;
+            color: white;
+            top:20%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .welcome{
+            width: 100%;
+            text-align: center;
+            font-family: 'Roboto Condensed', sans-serif;
+            /* font-family: 'Barlow Semi Condensed', sans-serif; */
+            font-size: 20px;
+            font-weight: lighter;
+            animation-duration: 2s;
+            font-style: italic;
+        }
+
+        .branding{
+            /* width: 100%; */
+            text-align: center;
+            /* font-family: 'Roboto Condensed', sans-serif; */
+            font-family: 'Sansita Swashed', cursive;
+            font-size: 50px;
+            /* background-image: linear-gradient(315deg, #e8aa50 0%, #d89940 134%) !important; */
+            background-image: linear-gradient(315deg, #e8aa50 0%,#ffd700 134%) !important;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+
+        .button-light{
+            margin:auto;
+            /* margin-top: 80px; */
+            text-decoration: none;
+            color:#fff !important;
+            font-family: 'Roboto Condensed', sans-serif;
+            /* background-image: linear-gradient(315deg, #e8aa50 0%, #d89940 134%) !important; */
+            background-image: linear-gradient(315deg, #e8aa50 0%,#ffd700 134%) !important;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:20px;
+            font-size: 20px;
+            font-weight: 600;
+            border: 2px solid #fff;
+            width: 80%;
+        }
+
+        .line img {
+          /* width: 79px;
+          margin-bottom: 30px;
+          margin-left: 150px; */
+          display: none;
+        }
+
+        .about-text{
+            text-align: center;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 18px;
+            color: #fff;
+            margin-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .about-section{
+            min-height: 90vh;
+            height: auto;
+            width: 100%;
+            padding:30px;
+            /* padding-top:0px; */
+            /* background-image: url('about-section.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; */
+            background-color: rgba(0, 0, 0, 0.7);
+            background-image: linear-gradient(315deg, #e8aa50 0%,#ffd700 134%) !important;
+            position: relative;
+            color: white;
+        }
+
+        .why-us-text{
+          /* position: absolute;
+          color: #ffd700;
+          z-index: 10;
+          font-family: 'Dancing Script', cursive; comment this
+          font-size: 60px;
+          top:450px;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-weight: 600;
+          text-decoration: underline; comment this */
+          display: none;
+        }
+
+        .overlay-about{
+          position: absolute;
+          top:0;
+          bottom:0;
+          right: 0;
+          left: 0;
+          /* background:black;
+          opacity: 0.8; */
+          /* background-image: linear-gradient(315deg, #d89940 0%, #311102 134%) !important; */
+          /* opacity: 0.3; */
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1;
+        }
+
+        .paneling{
+            width: 100%;
+            min-height: 800px;
+            height: auto;
+            /* background:rgba(0, 0, 0, 0.8); */
+            /* background-image: linear-gradient(315deg, #e8aa50 0%, #d89940 134%) !important; */
+            padding:20px;
+            background-image: url('about-section.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .flex-panel{  
+            /* margin-top: 50px; */
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            /* justify-content: space-between; */
+            /* align-items: center; */
+            position: relative;
+            z-index: 9;
+        }
+
+        /* .flex-why-us{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-items: center;
+          width: 25%;
+          width: 200px;
+          text-align: center;
+        } */
+
+        .flex-why-us i{
+          display: none;
+        }
+
+        .flex-why-us .title{
+          color: #fff;
+          font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .flex-why-us .desc{
+          color: #fff;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-weight: 100;
+          /* font-size: 12px; */
+        }
+
+        .flex-why-us .biger-circle{
+          display: none;
+        }
+        
+        .flex-why-us .circle{
+          display: none;
+        }
+
+        .text-why-us{
+          width: 100%;
+          /* text-align: center; */
+          /* margin-top: 20px; */
+        }
+
+        /* /// value /// */
+
+    .value-section {
+      background-color: black;
+      /* background-image: linear-gradient(315deg, #e8aa50 0%, #d89940 134%);   */
+      height: 200vh;
+    }
+
+    .box-top-value {
+      display: none;
+    }
+
+    .box-bottom-value {
+      display: none;
+    }
+
+    .value-title{
+      position: relative;
+    }
+
+    .liner{
+      width: 200px;
+      height: 10px;
+      background-color: #ffd700;
+      /* z-index: 999999; */
+      position: absolute;
+      right: 0;
+      top: 70px;
+    }
+
+    .liner-2{
+      display: none;
+    }
+
+    .liner-3{
+      width: 200px;
+      height: 10px;
+      background-color: #ffd700;
+      /* z-index: 999999; */
+      position: absolute;
+      /* right: 820px; */
+      left: 0px;
+      top: 870px;
+    }
+
+    .value-title p {
+      font-size: 40px;
+      text-align: right;
+      /* text-align: left; */
+      /* margin-left: 700px; */
+      padding-top: 90px;
+      color: white;
+      /* font-family: 'Josefin Sans', sans-serif; */
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .value-desc {
+      font-size: 50px;
+      text-align: right;
+      /* margin-left: 650px; */
+      color: white;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .value-bottom-desc p {
+      font-size: 40px;
+      /* text-align: left; */
+      color: white;
+      margin-top: 170px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .services-section {
+          min-height: 190vh;
+          height: auto;
+          width: 100%;
+          padding:30px;
+          /* padding-top:0px; */
+          background-image: url('services-section.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+
+        .overlay-services {
+          position: absolute;
+          top:0;
+          bottom:0;
+          right: 0;
+          left: 0;
+          /* background:black;
+          opacity: 0.8; */
+          /* background-image: linear-gradient(315deg, #d89940 0%, #311102 134%) !important; */
+          /* opacity: 0.3; */
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .section-testimonials{
+          min-height: 120vh;
+          height: auto;
+          width: 100%;
+          padding:30px;
+          background-color: black;
+          position: relative;
+      }
+
+      .flex-testimonials{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+/* slider */
+  .card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .card-carousel .my-card {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-2rem);
+    transform: scale(0.6) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    background: #2e5266;
+    background: linear-gradient(to top, #2e5266, #6e8898);
+    transition: 1s;
+  }
+
+  .card-carousel .my-card:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0.3);
+    bottom: -5rem;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+
+  .card-carousel .my-card.active {
+    z-index: 3;
+    -webkit-transform: scale(1) translateY(0) translateX(0);
+    transform: scale(1) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+    box-shadow: 0px 5px 30px 10px #ffd700;
+  }
+
+  .card-carousel .my-card.prev, .card-carousel .my-card.next {
+    z-index: 2;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+    transform: scale(0.8) translateY(-1rem) translateX(0);
+    opacity: 0.6;
+    pointer-events: auto;
+    transition: 1s;
+  }
+
+  .card-1{
+    display: none;
+    /* background-image: url('shake2.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important; */
+  }
+
+  .card-2{
+    display: none;
+    /* background-image: url('shake1.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important; */
+  }
+
+  .card-3{
+    display: none;
+    /* background-image: url('testimoni.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important; */
+  }
+
+  .testimonial-greeting-text{
+      font-size: 40px;
+      text-align: left;
+      /* text-align: left; */
+      /* margin-left: 700px; */
+      padding-top: 90px;
+      color: white;
+      /* font-family: 'Josefin Sans', sans-serif; */
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .testimonial-greeting-text-desc{
+      font-size: 20px;
+      text-align: left;
+      /* text-align: left; */
+      /* margin-left: 700px; */
+      color: white;
+      /* font-family: 'Josefin Sans', sans-serif; */
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .liner-4{
+      width: 200px;
+      height: 10px;
+      background-color: #ffd700;
+      /* z-index: 999999; */
+      position: absolute;
+      /* right: 820px; */
+      left: 30px;
+      top: 100px;
+    }
+
+    .name-holder{
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .quote-holder{
+      position: absolute;
+      padding: 20px;
+      width: 100%;
+      text-align: left;
+      color: #fff;
+      top: 30%;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 20px;
+    }
+
+    .name-holder .name {
+      color: #fff;
+      font-size: 25px;
+      font-family: 'Roboto Condensed', sans-serif;
+      margin-bottom: 5px;
+    }
+
+    .name-holder .company {
+      color: #ffd700;
+      font-size: 19px;
+      /* font-family: 'Roboto Condensed', sans-serif; */
+      margin: 0;
+      padding-top: 0px;
+      /* font-family: 'Dancing Script', cursive; */
+      font-family: 'Sansita Swashed', cursive;
+    }
+
+    .img-holder-quote{
+      background-image: url('bb (Original).png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      /* top: 100px; */
+      /* left: 50%; */
+      /* z-index: 9; */
+      /* background-color: black; */
+      /* width: 100px; */
+      /* height: 100px; */
+      text-align: center;
+    }
+
+}
+/* akhir media 600px */
+
+@media (min-width: 1200px) {
+    .bi-search {
+        margin-right: 18px;
+    }
+
+    .bi-cart {
+        margin-right: 18px;
+    }
+
+    .nav-link {
+        margin-right: 18px;
+        font-family: 'Roboto Condensed', sans-serif;
+        /* font-family: 'League Spartan', sans-serif; */
+        font-size: 18px;
+    }
+
+    .card-mobile{
+      display: none;
+    }
+
+/* first page */
+.display-image{
+            width: 100%;
+            height: 110vh;
+            background-image: url('bg-top.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* background-image: linear-gradient(315deg, #d89940 0%, #311102 134%) !important; */
+            height: 100%;
+            width: 100%;
+            /* opacity: 0.3; */
+        }
+
+        .block-greeting{
+            margin: auto;
+            height: 100%;
+            width: 800px;
+            background:black;
+            opacity: 0.8;
+            position: relative;
+        }
+
+        .box-top{
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            top:80px;
+            /* background-color: black; */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('branding-1.jpg');
+        }
+
+        .box-bottom{
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('branding-2.jpg');
+            /* background-color: black; */
+            right: 0;
+            bottom: 80px;
+        }
+
+        .greeting-text{
+            position: absolute;
+            z-index: 4;
+            color: white;
+            top:20%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .welcome{
+            width: 100%;
+            text-align: center;
+            font-family: 'Roboto Condensed', sans-serif;
+            /* font-family: 'Barlow Semi Condensed', sans-serif; */
+            font-size: 20px;
+            font-weight: lighter;
+            animation-duration: 2s;
+            font-style: italic;
+        }
+
+        .branding{
+            /* width: 100%; */
+            text-align: center;
+            /* font-family: 'Roboto Condensed', sans-serif; */
+            font-family: 'Sansita Swashed', cursive;
+            font-size: 110px;
+            /* background-image: linear-gradient(315deg, #e8aa50 0%, #d89940 134%) !important; */
+            background-image: linear-gradient(315deg, #e8aa50 0%,#ffd700 134%) !important;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+
+        .button-light{
+            margin:auto;
+            /* margin-top: 80px; */
+            text-decoration: none;
+            color:#fff !important;
+            font-family: 'Roboto Condensed', sans-serif;
+            /* background-image: linear-gradient(315deg, #e8aa50 0%, #d89940 134%) !important; */
+            background-image: linear-gradient(315deg, #e8aa50 0%,#ffd700 134%) !important;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:20px;
+            font-size: 20px;
+            font-weight: 600;
+            border: 2px solid #fff;
+            width: 50%;
+        }
+
+        .about-section{
+            min-height: 90vh;
+            height: auto;
+            width: 100%;
+            padding:30px;
+            /* padding-top:0px; */
+            /* background-image: url('about-section.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; */
+            background-color: rgba(0, 0, 0, 0.7);
+            background-image: linear-gradient(315deg, #e8aa50 0%,#ffd700 134%) !important;
+            position: relative;
+        }
+
+        .why-us-text{
+          position: absolute;
+          color: #ffd700;
+          z-index: 10;
+          /* font-family: 'Dancing Script', cursive; */
+          font-size: 60px;
+          top:450px;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-weight: 600;
+          /* text-decoration: underline; */
+        }
+
+        .overlay-about{
+          position: absolute;
+          top:0;
+          bottom:0;
+          right: 0;
+          left: 0;
+          /* background:black;
+          opacity: 0.8; */
+          /* background-image: linear-gradient(315deg, #d89940 0%, #311102 134%) !important; */
+          /* opacity: 0.3; */
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .line{
+            width:100%;
+            text-align: center;
+            /* margin-top: -150px; */
+            animation-duration: 2s;
+            padding:40px;
+        }
+
+        .line img {
+          width: 79px; 
+          margin-bottom: 30px;
+        }
+
+        .about-text{
+            text-align: center;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        .paneling{
+            width: 100%;
+            min-height: 800px;
+            height: auto;
+            /* background:rgba(0, 0, 0, 0.8); */
+            /* background-image: linear-gradient(315deg, #e8aa50 0%, #d89940 134%) !important; */
+            padding:20px;
+            background-image: url('about-section.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .paneling-default {
+            width: 100%;
+            min-height: 400px;
+            height: auto;
+            background:rgba(0, 0, 0, 0.8);
+            /* background-image: linear-gradient(315deg, #e8aa50 0%, #d89940 134%) !important; */
+            padding:20px;
+        }
+
+        .flex-panel{  
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 9;
+        }
+
+        .flex-why-us{
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-items: center;
+          width: 25%;
+          /* width: 200px;
+          text-align: center; */
+        }
+
+        .flex-why-us i{
+          /* color: #fff; */
+          color: #e8aa50;
+          font-size: 50px;
+        }
+
+        .flex-why-us .title{
+          color: #fff;
+          font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .flex-why-us .desc{
+          color: #fff;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-weight: 100;
+          font-size: 12px;
+        }
+
+        .flex-why-us .biger-circle{
+          width: 110px;
+          height: 110px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /* background-color: transparent; */
+          border-radius: 100%;
+          border: none;
+          /* transition: .5s; */
+        }
+        
+        .flex-why-us .circle{
+          width: 100px;
+          height: 100px;
+          border-radius: 100%;
+          background-color: #2f2b2c;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /* background-color: #e8aa50; */
+          /* background-image: linear-gradient(315deg, #d89940 0%, #311102 134%) !important; */
+        }
+
+        .text-why-us{
+          width: 100%;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .services-section {
+          min-height: 190vh;
+          height: auto;
+          width: 100%;
+          padding:30px;
+          /* padding-top:0px; */
+          background-image: url('services-section.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+
+        .overlay-services {
+          position: absolute;
+          top:0;
+          bottom:0;
+          right: 0;
+          left: 0;
+          /* background:black;
+          opacity: 0.8; */
+          /* background-image: linear-gradient(315deg, #d89940 0%, #311102 134%) !important; */
+          /* opacity: 0.3; */
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .section-testimonials{
+          min-height: 120vh;
+          height: auto;
+          width: 100%;
+          padding:30px;
+          background-color: black;
+          position: relative;
+      }
+
+      .flex-testimonials{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+/* slider */
+  .card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .card-carousel .my-card {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-2rem);
+    transform: scale(0.6) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    background: #2e5266;
+    background: linear-gradient(to top, #2e5266, #6e8898);
+    transition: 1s;
+  }
+
+  .card-carousel .my-card:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0.3);
+    bottom: -5rem;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+
+  .card-carousel .my-card.active {
+    z-index: 3;
+    -webkit-transform: scale(1) translateY(0) translateX(0);
+    transform: scale(1) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+    box-shadow: 0px 5px 30px 10px #ffd700;
+  }
+
+  .card-carousel .my-card.prev, .card-carousel .my-card.next {
+    z-index: 2;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+    transform: scale(0.8) translateY(-1rem) translateX(0);
+    opacity: 0.6;
+    pointer-events: auto;
+    transition: 1s;
+  }
+
+  .card-1{
+    background-image: url('shake2.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .card-2{
+    background-image: url('shake1.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .card-3{
+    background-image: url('testimoni.jpg') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+   /* /////////////////////////////////////////////////////////// */
+   .value-section {
+      background-color: black;
+      /* background-image: linear-gradient(315deg, #e8aa50 0%, #d89940 134%);   */
+      height: 1000px;
+    }
+
+    .box-top-value {
+        width: 600px;
+        height: 400px;
+        position: absolute;
+        margin-top: 50px;
+        /* top:80px; */
+        /* background-color: black; */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('branding-1.jpg');
+    }
+
+    .box-bottom-value {
+            width: 600px;
+            height: 400px;
+            margin-top: 170px;
+            position: absolute;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('branding-2.jpg');
+            /* background-color: black; */
+            right: 0;
+            /* bottom: 80px; */
+    }
+
+    .value-title{
+      position: relative;
+    }
+
+    .liner{
+      width: 200px;
+      height: 10px;
+      background-color: #ffd700;
+      /* z-index: 999999; */
+      position: absolute;
+      right: 0;
+      top: 70px;
+    }
+
+    .liner-2{
+      width: 200px;
+      height: 10px;
+      background-color: #ffd700;
+      /* z-index: 999999; */
+      position: absolute;
+      left: 250px;
+      top: 810px;
+    }
+
+    .liner-3{
+      width: 200px;
+      height: 10px;
+      background-color: #ffd700;
+      /* z-index: 999999; */
+      position: absolute;
+      /* right: 820px; */
+      left: 0px;
+      top: 870px;
+    }
+
+    .value-title p {
+      font-size: 40px;
+      text-align: right;
+      /* text-align: left; */
+      /* margin-left: 700px; */
+      padding-top: 90px;
+      color: white;
+      /* font-family: 'Josefin Sans', sans-serif; */
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .value-desc {
+      font-size: 50px;
+      text-align: right;
+      /* margin-left: 650px; */
+      color: white;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .value-bottom-desc p {
+      font-size: 40px;
+      /* text-align: left; */
+      color: white;
+      margin-top: 170px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    /*  */
+
+    .testimonial-greeting-text{
+      font-size: 40px;
+      text-align: left;
+      /* text-align: left; */
+      /* margin-left: 700px; */
+      padding-top: 90px;
+      color: white;
+      /* font-family: 'Josefin Sans', sans-serif; */
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .testimonial-greeting-text-desc{
+      font-size: 20px;
+      text-align: left;
+      /* text-align: left; */
+      /* margin-left: 700px; */
+      color: white;
+      /* font-family: 'Josefin Sans', sans-serif; */
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .liner-4{
+      width: 200px;
+      height: 10px;
+      background-color: #ffd700;
+      /* z-index: 999999; */
+      position: absolute;
+      /* right: 820px; */
+      left: 30px;
+      top: 100px;
+    }
+
+    .name-holder{
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .quote-holder{
+      position: absolute;
+      padding: 20px;
+      width: 100%;
+      text-align: left;
+      color: #fff;
+      top: 30%;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 20px;
+    }
+
+    .name-holder .name {
+      color: #fff;
+      font-size: 25px;
+      font-family: 'Roboto Condensed', sans-serif;
+      margin-bottom: 5px;
+    }
+
+    .name-holder .company {
+      color: #ffd700;
+      font-size: 19px;
+      /* font-family: 'Roboto Condensed', sans-serif; */
+      margin: 0;
+      padding-top: 0px;
+      /* font-family: 'Dancing Script', cursive; */
+      font-family: 'Sansita Swashed', cursive;
+    }
+
+    .img-holder-quote{
+      background-image: url('bb (Original).png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      /* top: 100px; */
+      /* left: 50%; */
+      /* z-index: 9; */
+      /* background-color: black; */
+      /* width: 100px; */
+      /* height: 100px; */
+      text-align: center;
+    }
+
+    .dropdown-menu {
+      display: none;
+    }
+
+    .dropdown-item {
+      display: none;
+    }
+
+}
+/* akhir media 1200 */
+
+    @media (min-width: 992px) {
+
+      .dropdown-benoit{
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 1px solid #e8aa50;
+        top:80px;
+      }
+
+      .flex-dropdown{
+        height: 40px;
+        /* margin-top:10px; */
+        padding:20px;
+      }
+
+      .text-dropdown{
+        color: #fff;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .text-dropdown:hover{
+        color: #e8aa50;
+        /* font-family: 'Roboto Condensed', sans-serif;
+        font-size: 14px;
+        text-decoration: none;
+        cursor: pointer; */
+      }
+
+    .dropdown-menu {
+      display: none;
+    }
+
+    .dropdown-item {
+      display: none;
+    }
+
+
+}
+/* akhir media 922 */
+
+
+.navbar-brand img { 
+            max-height: 65px;
+            max-width: 100%; 
+    }
+
+    .navbar {
+        /* background-color: #ff4e00 !important; */
+        background-color: rgba(0, 0, 0, 0.7);
+        background-image: linear-gradient(315deg, #e8aa50 0%,#ffd700 134%) !important;
+    }
+
+    .navbar-nav {
+        /* align-items: center; */
+        /* display: flex; */
+        /* justify-content: center; */
+        margin: auto;
+    }
+
+    /* float button wa */
+    .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        /* box-shadow: 2px 2px 3px #999; */
+        z-index:100;
+    }
+
+    .my-float{
+        margin-top:16px;
+    }
+
+    .list-unstyled a {
+      text-decoration: none;
+    }
+
+    footer {
+      font-family: 'Roboto Condensed', sans-serif;
+      background-color: rgba(0, 0, 0, 0.7);
+      background-image: linear-gradient(315deg, #e8aa50 0%,#ffd700 134%) !important;
+    }
+
+    .dropdown-menu {
+      background-image: linear-gradient(315deg, #e8aa50 0%, #d89940 134%);
+    }
+
+    .dropdown-item {
+      color: white;
+    }
+
+    /* .dropdown-benoit{
+      display: none;
+    } */
+
+</style>
+
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="2. PNG White BBlogo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item not-drop-down">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown" style="position: relative;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="socialMediaManagement.html">Internet & Social Media Management</a></li>
+                  <li><a class="dropdown-item" href="brandAndCampaign.html">Pendampingan Brand & Campaign</a></li>
+                  <li><a class="dropdown-item" href="auditAndStrategy.html">Brand Audit & Brand Strategi</a></li>
+                  <li><a class="dropdown-item" href="consultation.html">Konsultasi Digital Marketing</a></li>
+                  <li><a class="dropdown-item" href="companyProfile.html">Company Profile</a></li>
+                  <li><a class="dropdown-item" href="survey.html">Survey</a></li>
+                  <li><a class="dropdown-item" href="https://grapadinews.co.id/pasang-iklan-murah/">Pasang Iklan</a></li>
+                </ul>
+                <div class="dropdown-benoit" id="dropdown-benoit">
+                  <div class="flex-dropdown">
+                    <a href="socialMediaManagement.html" class="text-dropdown">
+                      Internet & Social Media Management
+                    </a>
+                  </div>
+                  <div class="flex-dropdown">
+                    <a href="brandAndCampaign.html" class="text-dropdown">
+                      Pendampingan Brand & Campaign
+                    </a>
+                  </div>
+                  <div class="flex-dropdown">
+                    <a href="auditAndStrategy.html" class="text-dropdown">
+                      Brand Audit & Brand Strategi
+                    </a>
+                  </div>
+                  <div class="flex-dropdown">
+                    <a href="consultation.html" class="text-dropdown">
+                      Konsultasi Digital Marketing
+                    </a>
+                  </div>
+                  <div class="flex-dropdown">
+                    <a href="companyProfile.html" class="text-dropdown">
+                      Company Profile
+                    </a>
+                  </div>
+                  <div class="flex-dropdown">
+                    <a href="survey.html" class="text-dropdown">
+                      Survey
+                    </a>
+                  </div>
+                  <div class="flex-dropdown">
+                    <a href="https://grapadinews.co.id/pasang-iklan-murah/" class="text-dropdown">
+                      Pasang Iklan
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item not-drop-down">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item not-drop-down">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+        <div class="side-menu text-white">
+            <i class="bi-search"></i>
+            <i class="bi bi-cart"></i>
+        </div>
+
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- float Button Wa -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/6282258533259" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <div class="display-image">
+        <div class="overlay"></div>
+        <div class="box-top"></div>
+        <div class="box-bottom"></div>
+        <div class="floating-box-one"></div>
+        <div class="floating-box-two"></div>
+        <div class="floating-box-three"></div>
+        <div class="floating-box-four"></div>
+        <div class="block-greeting">
+            <div class="greeting-text">
+                <p class="welcome">BRAND ADVISORY - GUIDE CAMPAIGN - IMAGE CONSULTANT</p>
+                <p class="branding">Brankasbro.id</p>
+
+                <div class="line">
+                    <img src="bb (Original).png" alt="">
+                    <!-- <i class="fa fa-diamond" aria-hidden="true"></i> -->
+                    <p class="about-text">Brankas Bro merupakan perusahaan Consultant Branding dan Strategi Kampanye Mendampingi klien dalam memilih dan memberi nasehat atas kampanye yang dilakukan agar kampanye yang di lakukan Tajam, Efisien dan Berdampak </p>
+                    <a class="button-light" style="margin-top: 60px;" href="https://wa.me/6282258533259">SCHEDULE YOUR CONSULTATION</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+      <!-- <div class="overlay-about"></div> -->
+        <div class="paneling" style="display: flex; justify-content: center; align-items: center;">
+          <div class="why-us-text" style="text-align: center;">
+            WHY YOU HAVE TO CHOOSE US
+            <br>
+            <small style="font-size: 50px;"> <i class="fa fa-diamond" aria-hidden="true"></i> </small>
+          </div> 
+          <div class="overlay-about"></div>
+            <div class="flex-panel">
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">INTEGRITY</p>
+                  <p class="desc">Intergritas yang tinggi membuat individu yang bekerja di brankasbro harus menjadi pribadi jujur dan berkarakter kuat.</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">TEAM WORK</p>
+                  <p class="desc">Intergritas yang tinggi membuat individu yang bekerja di brankasbro harus menjadi pribadi jujur dan berkarakter kuat.</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">AKURAT</p>
+                  <p class="desc">Kami memberikan jaminan untuk setiap laporan yang telah kami kerjakan.</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">EXCELENT SERVICES</p>
+                  <p class="desc">Kami akan memberikan layanan dan service terbaik untuk pengguna jasa dengan tetap mengacu pada prinsip yang ada.</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">24/7 SERVICES</p>
+                  <p class="desc">Team kami siap dan selalu standby 24/7 untuk membantu dan menyelesaikan setiap task dan masalah yang ada.</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">BERPENGALAMAN</p>
+                  <p class="desc">Kami memiliki tim konsultan yang sudah solid dan berpengalaman puluhan tahun di bidangnya.</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex-panel" style="justify-content: center;">
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">24/7 SERVICES</p>
+                  <p class="desc">Team kami siap dan selalu standby 24/7 untuk membantu dan menyelesaikan setiap task dan masalah yang ada.</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">BERPENGALAMAN</p>
+                  <p class="desc">Kami memiliki tim konsultan yang sudah solid dan berpengalaman puluhan tahun di bidangnya.</p>
+                </div>
+              </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="value-section">
+      <div class="box-top-value"></div>
+      <div class="container">
+      <div class="value-title">
+        <div class="liner"></div>
+        <div class="liner-2"></div>
+        <div class="liner-3"></div>
+        <p>Our Value</p>
+        <!-- <p>Our Value</p> -->
+      </div>
+      <div class="value-desc">
+        <ul style="list-style: none;">
+          <li>Tajam</li>
+          <li>Tepat Sasaran</li>
+          <li>Efesien</li>
+          <li>Berdampak</li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="box-bottom-value"></div>
+      <div class="container">
+        <div class="value-bottom-desc col-6">
+        <p>“ MEREK YANG UNIK MEMBUAT ORANG PENASARAN UNTUK MELIHAT, TAPI KONTEN YANG NGANGENI YANG MEMBUAT ORANG KEMBALI LAGI ”</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="services-section">
+      <div class="overlay-services"></div>
+        <div class="paneling-default">
+            <div class="flex-panel">
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-asterisk" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">CONCEPT DEVELOPMENT</p>
+                  <p class="desc">Concept development is one of the steps in the new product development. After idea generation and screening, concept development is the detail version of idea, explained keeping in mind consumers’ needs. </p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-sitemap" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">INTERNET & SOCIAL MEDIA MANAGEMENT</p>
+                  <p class="desc">Internet and social media management is the process of managing your online interactions and content across social media channels with social media optimization and SEO</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">NEW MEDIA MARKETING</p>
+                  <p class="desc">New Media Marketing Using Digital Marketing and Advertising , digital marketing refers to advertising delivered through digital channels such as search engines, websites, social media, email, and mobile apps.</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="flex-panel" style="justify-content: center;">
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">24/7 SERVICES</p>
+                  <p class="desc">Team kami siap dan selalu standby 24/7 untuk membantu dan menyelesaikan setiap task dan masalah yang ada.</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">BERPENGALAMAN</p>
+                  <p class="desc">Kami memiliki tim konsultan yang sudah solid dan berpengalaman puluhan tahun di bidangnya.</p>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="flex-panel">
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">PENDAMPINGAN BRAND & CAMPAIGN</p>
+                  <p class="desc">Mendampingi klien dalam melakukan kampanye bisnis maupun personal branding agar anggaran yang keluar efisien dan terukur, baik itu dari survey Pemetaan market</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">BRAND AUDIT & BRAND STRATEGI</p>
+                  <p class="desc">Kami melakukan pendampingan Audit Internal menggunakan coorporate analysis maupun Audit external menggunakan Target market ,competitor dan market trend analysis</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">BRAND IMPLEMENTATION</p>
+                  <p class="desc">Kami dapat mengimplementasikan Brand anda ke dalam Visual berupa logo , packing desain bahkan website maupun Verbal yang berupa Brand naming ,Tagline development hingga Copy Writing</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-panel">
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">SURVEI</p>
+                  <p class="desc">Lakukan upaya terorganisir untuk mengumpulkan informasi tentang target pasar atau pelanggan. Ini adalah komponen strategi bisnis yang sangat penting untuk Anda</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-suitcase" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">COMPANY PROFILE</p>
+                  <p class="desc">Company Profile merupakan penjelasan mengenai perusahaan termasuk produknya secara verbal maupun grafik yang mengangkat corporate value serta product value</p>
+                </div>
+              </div>
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-picture-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">PASANG IKLAN</p>
+                  <p class="desc">Pasang Iklan Murah , Efisien dan Tepat sasaran Konten yang dibangun akan berdampak positif bagi anda dan perusahaan sehingga Membangun citra ke arah yang lebih baik</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-panel" style="justify-content: left;">
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">KONSULTASI DIGITAL MARKETING</p>
+                  <p class="desc">Jasa Konsultasi Digital Marketing dengan konsultan berpengalaman lebih dari 10 tahun agar menemukan insight baru dan bisnis anda dapat melejit</p>
+                </div>
+              </div>
+
+              <div class="flex-why-us">
+                <div class="biger-circle">
+                  <div class="circle">
+                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="text-why-us">
+                  <p class="title">CAMPAIGN</p>
+                  <p class="desc">Complete, planned course of action formulated to achieve defined objectives in marketing, public relations, quality enhancement, revenue generation, safety standards, etc.</p>
+                </div>
+              </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section-testimonials">
+      <div class="liner-4"></div>
+      <div class="testimonials-greeting">
+        <p class="testimonial-greeting-text">Client Testimonials</p>
+        <p class="testimonial-greeting-text-desc">What are they saying about us</p>
+      </div>
+
+      <div class="flex-testimonials" style="margin-top: 50px;">
+        <div class="card-carousel">
+          <div class="my-card card-1" style="position: relative;">
+            <div class="overlay"></div>
+            <div class="img-holder-quote"></div>
+            <div class="quote-holder">
+              brankas membantu saya membuat logo dan kampanye yang efektif
+            </div>
+            <div class="name-holder">
+              <p class="name">
+                Edwin
+              </p>
+              <p class="company">
+                CEO Sekar Group
+              </p>
+            </div>
+          </div>
+          <div class="my-card card-2">
+            <div class="overlay"></div>
+            <div class="img-holder-quote"></div>
+            <div class="quote-holder">
+              Wow brankas menjadikan iklan saya tepat sasaran dan sangat efisien  menggunakan digital marketing sekarang usaha kami makin melejit. Thanks Brankasbro, keep up the great work !
+            </div>
+            <div class="name-holder">
+              <p class="name">
+                Ana
+              </p>
+              <p class="company">
+                CEO Anaro
+              </p>
+            </div>
+          </div>
+          <div class="my-card card-3">
+            <div class="overlay"></div>
+            <div class="img-holder-quote"></div>
+            <div class="quote-holder">
+              Recomended ! saya sangat terbantu oleh brankabros.id dengan paket konsultasi bisnis, saya di ajak bertatap muka secara langsung sehingga saya dapat menemukan insight baru dan luar biasa atas semua sarannya dapat di implementasikan dengan mudah
+            </div>
+            <div class="name-holder">
+              <p class="name">
+                Riky
+              </p>
+              <p class="company">
+                Head Research Grapadi
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="responsif-testimonials" style="display: flex; flex-wrap: wrap;">
+        <div class="card-mobile">
+          <div class="img-holder-quote"></div>
+          <div class="quote-holder">
+            Recomended ! saya sangat terbantu oleh brankabros.id dengan paket konsultasi bisnis, saya di ajak bertatap muka secara langsung sehingga saya dapat menemukan insight baru dan luar biasa atas semua sarannya dapat di implementasikan dengan mudah
+          </div>
+          <div class="name-holder">
+            <p class="name">
+              Riky
+            </p>
+            <p class="company">
+              Head Research Grapadi
+            </p>
+          </div>
+        </div>
+        <div class="card-mobile">
+          <div class="img-holder-quote"></div>
+          <div class="quote-holder">
+            Recomended ! saya sangat terbantu oleh brankabros.id dengan paket konsultasi bisnis, saya di ajak bertatap muka secara langsung sehingga saya dapat menemukan insight baru dan luar biasa atas semua sarannya dapat di implementasikan dengan mudah
+          </div>
+          <div class="name-holder">
+            <p class="name">
+              Riky
+            </p>
+            <p class="company">
+              Head Research Grapadi
+            </p>
+          </div>
+        </div>
+        <div class="card-mobile">
+          <div class="img-holder-quote"></div>
+          <div class="quote-holder">
+            Recomended ! saya sangat terbantu oleh brankabros.id dengan paket konsultasi bisnis, saya di ajak bertatap muka secara langsung sehingga saya dapat menemukan insight baru dan luar biasa atas semua sarannya dapat di implementasikan dengan mudah
+          </div>
+          <div class="name-holder">
+            <p class="name">
+              Riky
+            </p>
+            <p class="company">
+              Head Research Grapadi
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="text-center text-lg-start text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row my-4">
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Group Usaha</h5>
+    
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#!" class="text-white">www.grapadikonsultan.com</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white">www.grapadinews.co.id</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-white">www.surveycenter.co.id</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-8 mb-md-0">
+    
+                <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                  <img src="bb (Original).png" height="70" style="margin-right: 10px;" alt=""
+                      loading="lazy" />
+                </div>
+      
+                <p class="text-center">PT. GRAPADI INTERNASIONAL TEKNOLOGI</p>
+      
+                <ul class="list-unstyled d-flex flex-row justify-content-center">
+                  <li>
+                    <a class="text-white px-2" href="#">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white px-2" href="#">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-white ps-2" href="#">
+                      <i class="bi bi-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+      
+              </div>
+              <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">Contact</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <p><i class="bi bi-geo-alt-fill pe-2"></i>Kinanti Building 2nd Floor Kawasan Epicentrum-Rasuna Said Jl.Epicentrum Tengah No.3 Karet Kuningan,Setiabudi
+                    Jakarta Selatan 12940</p>
+                </li>
+                <li>
+                  <p><i class="bi bi-telephone-fill pe-2"></i>+ 01 234 567 89</p>
+                </li>
+                <li>
+                  <p><i class="bi bi-envelope-fill pe-2"></i>brobrankas@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2022 Copyright
+          <a class="text-white" href="https://brankasbro.id/">brankasbro.id</a>
+          All Right Reserved
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+          $('.branding').addClass('animate__animated animate__zoomInDown');
+          $('.welcome').addClass('animate__animated animate__fadeInDown');
+          $('.box-top').addClass('animate__animated animate__backInLeft');
+          $('.box-bottom').addClass('animate__animated animate__backInUp');
+          $('.button-light').addClass('animate__animated animate__fadeInDown');
+          $('.line').addClass('animate__animated animate__fadeIn');
+    </script>
+
+    <script>
+       var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if(width > 800) {
+
+          document.addEventListener('scroll', function(e) {
+            // scroll = document.body.scrollTop;
+            // if (scroll > 100) {
+                
+                if($(window).scrollTop() > 150){
+                    $('.branding').addClass('animate__animated animate__zoomOutDown');
+                    $('.welcome').addClass('animate__animated animate__fadeOutUp');
+                    $('.box-top').addClass('animate__animated animate__backOutLeft');
+                    $('.box-bottom').addClass('animate__animated animate__backOutUp');
+                    $('.line').addClass('animate__animated animate__fadeOut');
+                    $('.paneling').addClass('animate__animated animate__slideInRight');
+                }
+
+                if($(window).scrollTop() < 150){
+                    $('.branding').removeClass('animate__animated animate__zoomOutDown');
+                    $('.welcome').removeClass('animate__animated animate__fadeOutUp');
+                    $('.line').removeClass('animate__animated animate__fadeOut');
+
+                    $('.box-top').removeClass('animate__animated animate__backOutLeft');
+                    $('.box-bottom').removeClass('animate__animated animate__backOutUp');
+                    
+                    $('.branding').addClass('animate__animated animate__zoomInDown');
+                    $('.welcome').addClass('animate__animated animate__fadeInDown');
+
+                    $('.box-top').addClass('animate__animated animate__backInLeft');
+                    $('.box-bottom').addClass('animate__animated animate__backInUp');
+                    $('.line').addClass('animate__animated animate__fadeIn');
+                }
+
+                if($(window).scrollTop() > 650){
+                  $('.box-top-value').addClass('animate_animated animate_backInLeft');
+                  $('.value-title').addClass('animate_animated animate_backInRight');
+                  $('.value-desc').addClass('animate_animated animate_backInRight');
+                }
+
+                if($(window).scrollTop() > 1100){
+                  $('.box-bottom-value').addClass('animate_animated animate_backInRight');
+                  $('.value-bottom-desc').addClass('animate_animated animate_backInLeft');
+                }
+
+                
+
+                    // }
+                }, true);
+
+                $('#dropdown-benoit').hide();
+                $('#navbarDropdownMenuLink').mouseenter(function(){
+                    $('#dropdown-benoit').show();
+                    $('#dropdown-benoit').removeClass('animate__animated animate__fadeOutDown');
+                    $('#dropdown-benoit').addClass('animate__animated animate__fadeInUp');
+                });
+
+                $('.not-drop-down').hover(function(){
+                    $('#dropdown-benoit').removeClass('animate__animated animate__fadeInUp');
+                    $('#dropdown-benoit').addClass('animate__animated animate__fadeOutDown');
+                });
+
+                $('.greeting-text').hover(function(){
+                    $('#dropdown-benoit').removeClass('animate__animated animate__fadeInUp');
+                    $('#dropdown-benoit').addClass('animate__animated animate__fadeOutDown');
+                });
+
+        }
+
+    </script>
+  
+    <script>
+       
+
+        $('.biger-circle').hover(function(){
+          $(this).css('border', '1px solid #e8aa50');
+        }, function(){
+          $(this).css('border', 'none');
+        });
+
+    </script>
+
+    <script>
+      $num = $('.my-card').length;
+      $even = $num / 2;
+      $odd = ($num + 1) / 2;
+
+      if ($num % 2 == 0) {
+        $('.my-card:nth-child(' + $even + ')').addClass('active');
+        $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
+        $('.my-card:nth-child(' + $even + ')').next().addClass('next');
+      } else {
+        $('.my-card:nth-child(' + $odd + ')').addClass('active');
+        $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
+        $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
+      }
+
+      $('.my-card').click(function() {
+        $slide = $('.active').width();
+        console.log($('.active').position().left);
+        
+        if ($(this).hasClass('next')) {
+          $('.card-carousel').stop(false, true).animate({left: '-=' + $slide});
+        } else if ($(this).hasClass('prev')) {
+          $('.card-carousel').stop(false, true).animate({left: '+=' + $slide});
+        }
+        
+        $(this).removeClass('prev next');
+        $(this).siblings().removeClass('prev active next');
+        
+        $(this).addClass('active');
+        $(this).prev().addClass('prev');
+        $(this).next().addClass('next');
+      });
+
+
+      // Keyboard nav
+      $('html body').keydown(function(e) {
+        if (e.keyCode == 37) { // left
+          $('.active').prev().trigger('click');
+        }
+        else if (e.keyCode == 39) { // right
+          $('.active').next().trigger('click');
+        }
+      });
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
